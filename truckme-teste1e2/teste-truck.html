@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,30 +12,36 @@
             padding: 0;
             line-height: 1.6;
         }
+
         header {
-            background-color:  #fff;
+            background-color: #fff;
             color: #333;
             padding: 10px 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
+
         header img {
             height: 50px;
         }
+
         nav {
             display: flex;
         }
+
         nav a {
             color: #333;
             margin-left: 15px;
             text-decoration: none;
             padding: 10px;
         }
+
         nav a:hover {
             background-color: #575757;
             border-radius: 5px;
         }
+
         .banner {
             background: url('banner.png') no-repeat center center/cover;
             color: #fff;
@@ -44,58 +51,72 @@
             justify-content: center;
             align-items: center;
             opacity: 0.8;
-            
         }
 
-        .text-banner{
+        .text-banner {
             max-width: 1000px;
-
         }
+
         .banner h1 {
             font-size: 3em;
             margin: 0;
         }
+
         section {
             padding: 50px 20px;
             text-align: center;
         }
-        #about{
-           background-color: #fa4800;
-           padding: 200px 20px;
+
+        #about {
+            background-color: #fa4800;
+            padding: 200px 20px;
+            position: relative;
         }
-        #services{
-           padding: 200px 20px;
+
+        #services {
+            padding: 200px 20px;
         }
-        #contact{
-           background-color: #fa4800;
-           padding: 200px 20px;
+
+        #contact {
+            background-color: #fa4800;
+            padding: 200px 20px;
         }
+
         .services table {
             margin: 0 auto;
             width: 80%;
             border-collapse: collapse;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        table, th, td {
+
+        table,
+        th,
+        td {
             border: 1px solid #ddd;
         }
-        th, td {
+
+        th,
+        td {
             padding: 15px;
             text-align: left;
         }
+
         form {
             display: flex;
             flex-direction: column;
             max-width: 600px;
             margin: 0 auto;
         }
-        input, textarea {
+
+        input,
+        textarea {
             margin-bottom: 10px;
             padding: 15px;
             font-size: 16px;
             border: 1px solid #ddd;
             border-radius: 5px;
         }
+
         button {
             padding: 15px;
             background-color: #333;
@@ -105,24 +126,62 @@
             border-radius: 5px;
             font-size: 16px;
         }
+
         button:hover {
             background-color: #575757;
         }
-      
+
+        .success-message {
+            display: none;
+            color: green;
+            margin-top: 10px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .gallery img {
+            max-width: 100%;
+            max-height: 400px;
+            display: none;
+        }
+        .gallery img.active {
+            display: block;
+        }
+        .gallery button {
+            padding: 10px;
+            margin: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .gallery button:hover {
+            background-color: #575757;
+        }
+
         @media (max-width: 768px) {
             .banner {
                 background: url('banner2.jpeg') no-repeat center center/cover;
                 opacity: 1;
             }
+
             .banner h1 {
                 font-size: 2em;
             }
+
             .services table {
                 width: 100%;
             }
         }
     </style>
 </head>
+
 <body>
     <header>
         <img src="logo-header.png" alt="TruckMe Logo">
@@ -137,18 +196,25 @@
     <div class="banner">
         <div class="text-banner">
             <h1>Bem-vindo à TruckMe</h1>
-            <p>A TruckMe é uma transportadora 100% digital, somos frutos da uberização de serviços. Nossa solução inteligente surgiu devido a necessidade de inovação e agilidade no 
-                modelo tradicional dos processos de frete, objetivando dinamizar o dia a dia dos nossos clientes e trazer muito mais economia.</p>
+            <p>A TruckMe é uma transportadora 100% digital, somos frutos da uberização de serviços. Nossa solução
+                inteligente surgiu devido a necessidade de inovação e agilidade no
+                modelo tradicional dos processos de frete, objetivando dinamizar o dia a dia dos nossos clientes e
+                trazer muito mais economia.</p>
         </div>
     </div>
 
     <section id="about" class="about">
         <h2>Sobre nós</h2>
-        <p>A TruckMe é uma empresa dedicada a fornecer serviços de transporte de qualidade. Nossa missão é oferecer soluções logísticas eficientes e seguras para nossos clientes. 
-            Através do nosso Aplicativo para transportadores, divulgamos as melhores ofertas de cargas, sem intermediação, comissionamento ou taxas.
-            Cuidamos da burocracia e lhe ajudamos a encontrar as melhores ofertas de cargas, permitindo-lhes o poder da negociação do frete, direto com o Embarcador.
-            <br>
-            Seja nosso parceiro, aproveite as ofertas de fretes e faça parte da mudança.</p>
+        <p class="about-text">A TruckMe é uma empresa dedicada a fornecer serviços de transporte de qualidade. Nossa
+            missão é oferecer soluções logísticas eficientes e seguras para nossos clientes.
+            Através do nosso Aplicativo para transportadores, divulgamos as melhores ofertas de cargas, sem
+            intermediação, comissionamento ou taxas.
+            Cuidamos da burocracia e lhe ajudamos a encontrar as melhores ofertas de cargas, permitindo-lhes o poder da
+            negociação do frete, direto com o Embarcador.
+            <br><span class="more-text">Seja nosso parceiro, aproveite as ofertas de fretes e faça parte da
+                mudança.</span>
+        </p>
+        <button onclick="toggleReadMore()">Leia mais</button>
     </section>
 
     <section id="services" class="services">
@@ -183,13 +249,101 @@
 
     <section id="contact" class="contact">
         <h2>Contato</h2>
-        <form>
+        <form id="contactForm" onsubmit="validateForm(event)">
             <input type="text" name="name" placeholder="Nome" required>
             <input type="email" name="email" placeholder="E-mail" required>
             <textarea name="message" placeholder="Mensagem" rows="5" required></textarea>
             <button type="submit">Enviar</button>
+            <div class="success-message">Mensagem enviada com sucesso!</div>
         </form>
     </section>
 
+    <section id="gallery" class="gallery">
+        <img src="imgs/img-carrosel (1).jpeg" class="active" alt="Galeria de Imagens">
+        <img src="imgs/img-carrosel (2).jpeg" alt="Galeria de Imagens">
+        <img src="imgs/img-carrosel (3).jpeg" alt="Galeria de Imagens">
+        <img src="imgs/img-carrosel (4).jpeg" alt="Galeria de Imagens">
+        <div>
+            <button onclick="prevImage()">Anterior</button>
+            <button onclick="nextImage()">Próximo</button>
+        </div>
+    </section>
+
+    <script>
+        function toggleReadMore() {
+            var aboutSection = document.querySelector('.about');
+            var moreText = document.querySelector('.more-text');
+            var button = aboutSection.querySelector('button');
+            if (moreText.style.display === "none" || moreText.style.display === "") {
+                moreText.style.display = "inline";
+                button.textContent = "Leia menos";
+            } else {
+                moreText.style.display = "none";
+                button.textContent = "Leia mais";
+            }
+        }
+
+        function validateForm(event) {
+            event.preventDefault();
+            var form = document.getElementById('contactForm');
+            var name = form.name.value.trim();
+            var email = form.email.value.trim();
+            var message = form.message.value.trim();
+            var successMessage = document.querySelector('.success-message');
+
+            if (name === "" || email === "" || message === "") {
+                alert("Por favor, preencha todos os campos.");
+                return false;
+            }
+
+            var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
+                alert("Por favor, insira um endereço de e-mail válido.");
+                return false;
+            }
+
+            successMessage.style.display = "block";
+            form.reset();
+            setTimeout(function () {
+                successMessage.style.display = "none";
+            }, 5000);
+
+            return true
+        }
+
+        var currentImageIndex = 0;
+        var images = document.querySelectorAll('.gallery img');
+
+        function showImage(index) {
+            images.forEach((img, i) => {
+                img.classList.remove('active');
+                if (i === index) {
+                    img.classList.add('active');
+                }
+            });
+        }
+
+        function nextImage() {
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            showImage(currentImageIndex);
+        }
+
+        function prevImage() {
+            currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+            showImage(currentImageIndex);
+        }
+
+        function autoSlide() {
+            nextImage();
+            setTimeout(autoSlide, 4000); // Alterne a imagem a cada 3 segundos
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            showImage(currentImageIndex);
+            var moreText = document.querySelector('.more-text');
+            moreText.style.display = "none";
+            autoSlide(); // Iniciar o slideshow automático
+        });
+    </script>
 </body>
 </html>
