@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TruckMe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background-color:  #fff;
+            color: #333;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header img {
+            height: 50px;
+        }
+        nav {
+            display: flex;
+        }
+        nav a {
+            color: #333;
+            margin-left: 15px;
+            text-decoration: none;
+            padding: 10px;
+        }
+        nav a:hover {
+            background-color: #575757;
+            border-radius: 5px;
+        }
+        .banner {
+            background: url('banner.png') no-repeat center center/cover;
+            color: #fff;
+            padding: 300px 20px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0.8;
+            
+        }
+
+        .text-banner{
+            max-width: 1000px;
+
+        }
+        .banner h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        #about{
+           background-color: #fa4800;
+           padding: 200px 20px;
+        }
+        #services{
+           padding: 200px 20px;
+        }
+        #contact{
+           background-color: #fa4800;
+           padding: 200px 20px;
+        }
+        .services table {
+            margin: 0 auto;
+            width: 80%;
+            border-collapse: collapse;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        input, textarea {
+            margin-bottom: 10px;
+            padding: 15px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button {
+            padding: 15px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #575757;
+        }
+      
+        @media (max-width: 768px) {
+            .banner {
+                background: url('banner2.jpeg') no-repeat center center/cover;
+                opacity: 1;
+            }
+            .banner h1 {
+                font-size: 2em;
+            }
+            .services table {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo-header.png" alt="TruckMe Logo">
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">Sobre</a>
+            <a href="#services">Serviços</a>
+            <a href="#contact">Contato</a>
+        </nav>
+    </header>
+
+    <div class="banner">
+        <div class="text-banner">
+            <h1>Bem-vindo à TruckMe</h1>
+            <p>A TruckMe é uma transportadora 100% digital, somos frutos da uberização de serviços. Nossa solução inteligente surgiu devido a necessidade de inovação e agilidade no 
+                modelo tradicional dos processos de frete, objetivando dinamizar o dia a dia dos nossos clientes e trazer muito mais economia.</p>
+        </div>
+    </div>
+
+    <section id="about" class="about">
+        <h2>Sobre nós</h2>
+        <p>A TruckMe é uma empresa dedicada a fornecer serviços de transporte de qualidade. Nossa missão é oferecer soluções logísticas eficientes e seguras para nossos clientes. 
+            Através do nosso Aplicativo para transportadores, divulgamos as melhores ofertas de cargas, sem intermediação, comissionamento ou taxas.
+            Cuidamos da burocracia e lhe ajudamos a encontrar as melhores ofertas de cargas, permitindo-lhes o poder da negociação do frete, direto com o Embarcador.
+            <br>
+            Seja nosso parceiro, aproveite as ofertas de fretes e faça parte da mudança.</p>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Serviços</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Descrição</th>
+                    <th>Preço</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Transporte Rápido</td>
+                    <td>Serviço de transporte de cargas pesadas.</td>
+                    <td>R$ 300,00</td>
+                </tr>
+                <tr>
+                    <td>Transporte de Carga</td>
+                    <td>Serviço de transporte expresso.</td>
+                    <td>R$ 500,00</td>
+                </tr>
+                <tr>
+                    <td>Frete Internacional</td>
+                    <td>Serviço de transporte para fora do país.</td>
+                    <td>R$ 1000,00</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contato</h2>
+        <form>
+            <input type="text" name="name" placeholder="Nome" required>
+            <input type="email" name="email" placeholder="E-mail" required>
+            <textarea name="message" placeholder="Mensagem" rows="5" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+</body>
+</html>
