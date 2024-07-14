@@ -4,8 +4,9 @@
 Criação de página web para a TruckMe, utilizando o framework Vue.js. Etruturando e componentizando para facilitar a manutenção e a escalabilidade. 
 A componentização do projeto permite um desenvolvimento mais organizado e reutilizável. Implementamos diversas funcionalidades, incluindo um menu hamburguer para dispositivos móveis, 
 validação de formulários, mensagens de sucesso após submissões, uma galeria de imagens interativa, um footer, etc. Além disso foi projetado para ser um design clean, one peage, de facil navegação, e com responsividade, na paleta de cores da empresa
-e algumas imagens de exemplo criadas.
-Abaixo, detalhamos todas as bibliotecas, frameworks, alterações e mudanças realizadas durante o desenvolvimento.
+e algumas imagens de exemplo criadas. Foi configurado o Prettier para formatação de código, testes unitários para componentes, e scripts para garantir a formatação correta antes dos commits usando Husky e Pretty-Quick. Além de melhorar a responsividade e juste da fixação do header durante a rolagem. Para visualizar o site, fiz o deploy e está hospedado nesse link https://truckme-test.netlify.app/.
+
+Obs: A tarefa 1 e 2, com a página simples em html está na pasta truckme-teste1e2, para a versão final em Vue3 foram feitas algumas melhorias de design, rensponsividade entre outras, como descrito.
 
 ## Instruções sobre Como Executar e Instalar o Projeto
 ### Pré-requisitos
