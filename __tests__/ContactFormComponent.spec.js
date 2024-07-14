@@ -1,6 +1,5 @@
 import { mount } from '@vue/test-utils';
 import { describe, it, expect } from '@jest/globals';
-
 import ContactFormComponent from '@/components/ContactFormComponent.vue';
 
 describe('ContactFormComponent', () => {
