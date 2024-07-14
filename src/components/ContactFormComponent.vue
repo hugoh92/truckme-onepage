@@ -1,26 +1,6 @@
-<!-- <template>
-  <section id="contact" class="contact">
-    <h2>Contato</h2>
-    <form @submit.prevent="validateForm">
-      <input type="text" v-model="name" placeholder="Nome" required />
-      <input type="email" v-model="email" placeholder="E-mail" required />
-      <textarea
-        v-model="message"
-        placeholder="Mensagem"
-        rows="5"
-        required
-      ></textarea>
-      <button type="submit">Enviar</button>
-      <div v-if="successMessage" class="success-message">
-        Mensagem enviada com sucesso!
-      </div>
-    </form>
-  </section>
-</template> -->
-
 <template>
   <section id="contact" class="contact">
-    <h2>Contato</h2>
+    <span>Contato</span>
     <form @submit.prevent="validateForm">
       <input
         type="text"
@@ -125,6 +105,12 @@ button:hover {
   color: #333;
   font-weight: bold;
   margin-top: 10px;
+}
+
+span {
+  font-size: 50px;
+  font-weight: 600;
+  color: #333;
 }
 
 @media (max-width: 768px) {

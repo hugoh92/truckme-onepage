@@ -1,7 +1,7 @@
 <template>
   <section id="about" class="about">
     <div class="text-about">
-      <h2>Sobre nós</h2>
+      <span class="title-section">Sobre nós</span>
       <p class="about-text">
         A TruckMe é uma empresa dedicada a fornecer serviços de transporte de
         qualidade. Nossa missão é oferecer soluções logísticas eficientes e
@@ -12,7 +12,7 @@
           melhores ofertas de cargas, sem intermediação, comissionamento ou
           taxas. Cuidamos da burocracia e lhe ajudamos a encontrar as melhores
           ofertas de cargas, permitindo-lhes o poder da negociação do frete,
-          direto com o Embarcador.Seja nosso parceiro, aproveite as ofertas de
+          direto com o Embarcador. Seja nosso parceiro, aproveite as ofertas de
           fretes e faça parte da mudança.</span
         >
       </p>
@@ -43,11 +43,19 @@ export default {
 p {
   max-width: 1000px;
   margin: 20px auto;
+  color: #333;
+  font-size: 25px;
 }
 
 .about {
   background-color: #fa4800;
   padding: 100px 20px;
+}
+
+.title-section {
+  font-size: 50px;
+  font-weight: 600;
+  color: #333;
 }
 
 @media (max-width: 768px) {

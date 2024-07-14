@@ -1,6 +1,6 @@
 <template>
   <section id="services" class="services">
-    <h2>Serviços</h2>
+    <span>Serviços</span>
     <table>
       <thead>
         <tr>
@@ -51,6 +51,11 @@ td {
   text-align: left;
 }
 
+span {
+  font-size: 50px;
+  font-weight: 600;
+  color: #333;
+}
 @media (max-width: 768px) {
   .services {
     padding: 50px 20px;

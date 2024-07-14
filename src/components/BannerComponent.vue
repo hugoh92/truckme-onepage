@@ -27,8 +27,9 @@
   text-shadow:
     2px 2px 4px red,
     -2px -2px 4px blue;
-  opacity: 0.8;
+  opacity: 0.9;
 }
+
 .text-banner {
   max-width: 1000px;
 }
@@ -38,20 +39,16 @@
 }
 p {
   font-size: 25px;
-  -webkit-text-stroke-width: 0.1px;
-  -webkit-text-stroke-color: black;
   color: #fff;
 }
 span {
   font-size: 80px;
   font-weight: 600;
-  -webkit-text-stroke-width: 0.5px;
-  -webkit-text-stroke-color: #333;
 }
 @media (max-width: 768px) {
   .banner {
     background: url("@/assets/banner2.jpeg") no-repeat center center/cover;
-    opacity: 1;
+    opacity: 0.9;
   }
 
   .banner h1 {
@@ -59,6 +56,10 @@ span {
   }
   p {
     font-size: 20px;
+  }
+
+  span {
+    font-size: 50px;
   }
 
   .services table {

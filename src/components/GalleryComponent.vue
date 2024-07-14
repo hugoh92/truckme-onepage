@@ -1,6 +1,6 @@
 <template>
   <section id="gallery" class="gallery">
-    <h2>Galeria</h2>
+    <span>Galeria</span>
     <img
       v-for="(image, index) in images"
       :src="image"
@@ -79,6 +79,11 @@ export default {
   border: none;
   cursor: pointer;
   border-radius: 5px;
+}
+span {
+  font-size: 50px;
+  font-weight: 600;
+  color: #333;
 }
 
 @media (max-width: 768px) {
