@@ -1,7 +1,7 @@
 <template>
   <div class="banner">
     <div class="text-banner">
-      <h1>Bem-vindo à TruckMe</h1>
+      <span>Bem-vindo à TruckMe</span>
       <p>
         A TruckMe é uma transportadora 100% digital, somos frutos da uberização
         de serviços. Nossa solução inteligente surgiu devido a necessidade de
@@ -15,13 +15,18 @@
 
 <style scoped>
 .banner {
-  background: url("@/assets/banner.png") no-repeat center center/cover;
+  background: url("@/assets/imgs/img-carrosel (1).jpeg") no-repeat center
+    center/cover;
   color: #fff;
   padding: 300px 20px;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  text-shadow:
+    2px 2px 4px red,
+    -2px -2px 4px blue;
   opacity: 0.8;
 }
 .text-banner {
@@ -31,6 +36,18 @@
   font-size: 3em;
   margin: 0;
 }
+p {
+  font-size: 25px;
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: black;
+  color: #fff;
+}
+span {
+  font-size: 80px;
+  font-weight: 600;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #333;
+}
 @media (max-width: 768px) {
   .banner {
     background: url("@/assets/banner2.jpeg") no-repeat center center/cover;
@@ -38,7 +55,10 @@
   }
 
   .banner h1 {
-    font-size: 2em;
+    font-size: 2.5em;
+  }
+  p {
+    font-size: 20px;
   }
 
   .services table {
