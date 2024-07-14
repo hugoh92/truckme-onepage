@@ -65,6 +65,7 @@ export default {
 .gallery img.active {
   display: block;
 }
+
 .gallery button {
   margin: 10px;
   padding: 10px 20px;

@@ -40,12 +40,23 @@ export default {
 </script>
 
 <style scoped>
-.about {
+/* .about {
   background-color: #fa4800;
   padding: 200px 20px;
-}
+} */
 p {
   width: 1000px;
   margin: 20px auto;
+}
+
+.about {
+  background-color: #fa4800;
+  padding: 100px 20px;
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 50px 20px;
+  }
 }
 </style>

@@ -50,4 +50,14 @@ td {
   padding: 15px;
   text-align: left;
 }
+
+@media (max-width: 768px) {
+  .services {
+    padding: 50px 20px;
+  }
+
+  .services table {
+    width: 100%;
+  }
+}
 </style>
