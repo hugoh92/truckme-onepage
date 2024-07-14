@@ -63,7 +63,7 @@ header img {
 }
 
 nav a:hover {
-  background-color: rgb(252, 99, 38);
+  background-color: #fa4800;
   border-radius: 5px;
 }
 

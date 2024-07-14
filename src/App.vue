@@ -6,6 +6,7 @@
     <ServicesTableComponent />
     <ContactFormComponent />
     <GalleryComponent />
+    <FooterComponent />
   </div>
 </template>
 
@@ -16,6 +17,7 @@ import AboutComponent from "./components/AboutComponent.vue";
 import ServicesTableComponent from "./components/ServicesTableComponent.vue";
 import ContactFormComponent from "./components/ContactFormComponent.vue";
 import GalleryComponent from "./components/GalleryComponent.vue";
+import FooterComponent from "./components/FooterComponent.vue";
 
 export default {
   name: "App",
@@ -26,6 +28,7 @@ export default {
     ServicesTableComponent,
     ContactFormComponent,
     GalleryComponent,
+    FooterComponent,
   },
 };
 </script>
@@ -54,5 +57,16 @@ button {
 
 button:hover {
   background-color: #575757 !important;
+}
+
+section h2 {
+  font-size: 2.5em; /* Aumente este valor conforme necessário */
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  section h2 {
+    font-size: 2em; /* Ajuste para dispositivos móveis */
+  }
 }
 </style>
